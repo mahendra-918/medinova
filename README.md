@@ -13,5 +13,5 @@ Technologies Used 🛠️
 
 	•	Frontend: HTML, CSS, JavaScript
 	•	Backend:  Node.js
-	•	Database: MySQL, MongoDB (mention your DB)
+	•	Database: MySQL, MongoDB
 	
