@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Progress Photos</title>
+    <link rel="stylesheet" type="text/css" href="progress.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Upload Progress Photos</h2>
+        <form id="uploadForm">
+            <label for="photo">Select a photo:</label>
+            <input type="file" id="photo" name="photo" accept="image/*" required>
+            <button type="submit">Upload Photo</button>
+        </form>
+        <div id="photoGallery" class="photo-gallery">
+            <h3>Your Progress Photos</h3>
+            <div id="photos" class="photos"></div>
+        </div>
+    </div>
+    <script src="progress.js"></script>
+</body>
+</html>

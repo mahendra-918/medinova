@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Symptoms Selection</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Select Symptoms for <span id="diseaseName"></span></h2>
+        <input type="text" id="searchSymptomInput" class="search-bar" placeholder="Search Symptoms" onkeyup="searchSymptoms()">
+        <div id="symptoms" class="symptoms"></div>
+        <button onclick="redirectToDiet()">Get Diet Recommendations</button>
+        <div id="diet" class="diet"></div>
+        <div id="healthTips" class="health-tips">
+            <h3>Health Tips</h3>
+            <p>Stay hydrated, eat balanced meals, exercise regularly, and get enough sleep.</p>
+        </div>
+        <div id="bookingContainer" class="booking-container">
+            <h3>Book an Appointment</h3>
+            <form id="bookingForm" onsubmit="bookAppointment(event)">
+                <label for="date">Choose a date:</label>
+                <input type="date" id="date" name="date" required>
+                <label for="time">Choose a time slot:</label>
+                <select id="time" name="time" required>
+                    <option value="" disabled selected>Select a time slot</option>
+                    <option value="09:00-10:00">09:00 - 10:00</option>
+                    <option value="10:00-11:00">10:00 - 11:00</option>
+                    <option value="11:00-12:00">11:00 - 12:00</option>
+                    <option value="12:00-13:00">12:00 - 13:00</option>
+                    <option value="14:00-15:00">14:00 - 15:00</option>
+                    <option value="15:00-16:00">15:00 - 16:00</option>
+                </select>
+                <button type="submit">Book Appointment</button>
+            </form>
+            <div id="confirmationMessage"></div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

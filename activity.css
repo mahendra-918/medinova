@@ -1,0 +1,171 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 85%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+h2, h3 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #007BFF;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #007BFF;
+}
+
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+button.delete {
+    width: 60px; /* Adjust the width as needed */
+    height: 30px; /* Adjust the height as needed */
+    font-size: 12px; /* Adjust the font size as needed */
+    padding: 5px; /* Optional: Adjust padding for better appearance */
+}
+
+.activity-list, .chart-container {
+    width: 100%;
+    margin-top: 20px;
+    text-align: left;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.activity-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.activity-list li {
+    background-color: #e8f4fc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Align items vertically for better layout */
+}
+
+#results, #diet, #confirmationMessage {
+    width: 100%;
+    margin-top: 20px;
+    text-align: left;
+}
+
+#bookingContainer {
+    width: 100%;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #e9f7ef;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#bookingContainer h3 {
+    color: #28a745;
+}
+
+#confirmationMessage {
+    font-size: 1.2em;
+    color: green;
+}
+
+/* Responsive design for smaller devices */
+@media (max-width: 1280px) {
+    .container {
+        padding: 15px;
+    }
+
+    input, button {
+        padding: 8px;
+    }
+
+    button {
+        font-size: 0.9em;
+    }
+
+    h2, h3 {
+        font-size: 1.5em;
+    }
+
+    #confirmationMessage {
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    input, button {
+        padding: 8px;
+    }
+
+    button {
+        font-size: 0.9em;
+    }
+
+    h2, h3 {
+        font-size: 1.2em;
+    }
+
+    #confirmationMessage {
+        font-size: 1em;
+    }
+}

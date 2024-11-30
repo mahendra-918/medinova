@@ -1,0 +1,149 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 85%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+h2, h3 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #007BFF;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #007BFF;
+}
+
+input[type="file"], button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.photo-gallery {
+    width: 100%;
+    margin-top: 20px;
+    text-align: left;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.photos img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive design for smaller devices */
+@media (max-width: 1280px) {
+    .container {
+        padding: 15px;
+    }
+
+    input, button {
+        padding: 8px;
+    }
+
+    button {
+        font-size: 0.9em;
+    }
+
+    h2, h3 {
+        font-size: 1.5em;
+    }
+
+    .photo-gallery {
+        padding: 15px;
+    }
+
+    .photos img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    input, button {
+        padding: 8px;
+    }
+
+    button {
+        font-size: 0.9em;
+    }
+
+    h2, h3 {
+        font-size: 1.2em;
+    }
+
+    .photo-gallery {
+        padding: 10px;
+    }
+
+    .photos img {
+        width: 60px;
+        height: 60px;
+    }
+}

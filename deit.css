@@ -1,0 +1,106 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the start to allow the container to grow */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+h2, h3 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.diet, .avoid-foods {
+    width: 100%;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #e8f4fc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: block; /* Make list items block elements for full width */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Chart container styles */
+#chartContainer {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#dietChart {
+    max-width: 400px;
+    max-height: 400px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .diet, .avoid-foods {
+        padding: 10px;
+    }
+
+    #dietChart {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}

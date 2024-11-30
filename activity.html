@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Activity and Exercise Tracking</title>
+    <link rel="stylesheet" type="text/css" href="activity.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Activity and Exercise Tracking</h2>
+        <form id="activityForm">
+            <label for="activity">Activity:</label>
+            <input type="text" id="activity" name="activity" placeholder="e.g., Running, Swimming" required>
+            <label for="duration">Duration (minutes):</label>
+            <input type="number" id="duration" name="duration" placeholder="e.g., 30" required>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+            <button type="submit">Log Activity</button>
+        </form>
+        <div id="activityList" class="activity-list">
+            <h3>Logged Activities</h3>
+            <ul id="activities"></ul>
+        </div>
+        <div id="chartContainer" class="chart-container">
+            <h3>Activity Progress</h3>
+            <canvas id="activityChart"></canvas>
+        </div>
+        <p>do u want to check your progress <a href="progress.html">click here</a></p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="activity.js"></script>
+</body>
+</html>
